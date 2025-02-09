@@ -1,4 +1,5 @@
-/* Aşağıda global olarak tanımlanmış değişkenler bulunmaktadır, bunları değiştirmeyiniz. Açıklamaları takip ederek görevleri tamamlayın. */
+/* Aşağıda global olarak tanımlanmış değişkenler bulunmaktadır, bunları değiştirmeyiniz. 
+Açıklamaları takip ederek görevleri tamamlayın. */
 
 const pi = 3.14159;
 
@@ -28,7 +29,7 @@ const sayilar = [
   845, 650, 470.6, 464.5, 423.2, 730.8, 923, 239.5, 358.6, 339.1, 507, 667.7,
   867.7,
 ];
-
+const alan =
 /* ÖRNEK GÖREV: KareninAlani fonksiyonunu kullanarak aşağıdakileri uygulayın: 
 	1. Karenin kenar uzunluğunu fonksiyonun tek parametresi olarak alacak 
 	2. Karenin alanını hesaplayacak (💡 İPUCU: karenin alanı = karenin kenar uzunluğunun karesi)
@@ -42,27 +43,19 @@ function KareninAlani(kenaruzunlugu) {
 
 /* (Oto test yok) Yukarıdaki KareninAlani fonksiyonunu kenar uzunluğu = 10 vererek aşağıda çalıştırıp, sonucu konsolda gözlemleyin (console.log)  */
 
-/* GÖREV 1:  
-- CemberinCevresi fonksiyonunu kullanarak aşağıdaki yönergeleri uygulayın:
-	1. CemberinCevresi fonksiyonu parametre olarak sadece çemberin yarıçapını alacaktır. 
-	2. Global değişken olarak verilmiş pi sayısı fonksiyon içinde kullanılacak (pi sayısı fonksiyonun parametresi olarak alınmayacaktır)
-	3. Çemberin çevresi hesaplanacaktır (💡 İPUCU: Çemberin çevresi = 2 * pi * yarıçap)
-	4. Hesaplanan çemberin çevresi döndürülecektir.
-*/
-
-function CemberinCevresi(/* kodlar buraya */) {
-  /* kodlar buraya */
+function CemberinCevresi(yaricap) {
+  return 2 * pi * yaricap;
 }
+
+console.log(CemberinCevresi(5));
 
 /* (Oto test yok) Yukarıdaki CemberinCevresi fonksiyonunu yarıçap = 5 vererek aşağıda çalıştırıp, sonucu konsolda gözlemleyin (console.log)  */
 
-/* 	GÖREV 2:  
-- CemberinAlani fonksiyonunu kullanarak aşağıdaki yönergeleri uygulayın:
-	1. Argüman olarak çemberin yarıçapını BİRİNCİ parametre olacak alacaktır. 
-	2. Global değişken olarak verilmiş pi sayısını fonksiyonun İKİNCİ parametresi olacak alacaktır.
-	3. Çemberin alanı hesaplanacaktır (💡 İPUCU: Çemberin alanı = pi * yarıçapın karesi, yarıçapın karesini bulmak için Javascript içinde tanımlı Math kütüphanesini kullanabilirsiniz. Math.pow(yaricap,2))
-	4. Hesaplanan çemberin alanı döndürülecektir.
-*/
+function CemberinAlani(yaricap, pi) {
+  return pi * Math.pow(yaricap, 2);
+}
+
+console.log(CemberinAlani(15, pi));
 
 function CemberinAlani(/* kodlar buraya */) {
   /* kodlar buraya */
